@@ -1,0 +1,27 @@
+{
+    "name": "your-app-name",
+    "version": "1.0.0",
+    "private": true,
+    "main": "client/main.js",
+    "scripts": {
+        "start": "cd client && yarn electron-dev",
+        "build": "yarn build:client && electron-builder",
+        "build:client": "cd client && yarn build"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "electron": "^34.1.1",
+        "electron-builder": "^25.1.8"
+    },
+    "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e",
+    "win": {
+    "target": "nsis", 
+    "icon": "oborudovanie/binance_coin_bnb_crypto_icon_264375.ico" 
+    },
+    "nsis": {
+    "oneClick": false, 
+    "allowToChangeInstallationDirectory": true, 
+    "installerIcon": "oborudovanie/binance_coin_bnb_crypto_icon_264375.ico", 
+    "uninstallDisplayName": "Uninstaller" 
+    }
+}
